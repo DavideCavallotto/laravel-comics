@@ -134,3 +134,9 @@ Route::get('/', function() {
     
     
 });
+
+Route::get('/characters', function () {
+    return view('characters');
+})->name('characters');
+
+

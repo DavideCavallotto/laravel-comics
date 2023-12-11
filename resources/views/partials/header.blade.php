@@ -1,4 +1,4 @@
-<style lang="scss" scoped>
+<style>
 
 ul, ol {
     list-style: none;
@@ -14,10 +14,11 @@ input {
     border-bottom: 1px solid blue;
 }
 
-
-.container-fluid img {
-    object-position: top;
+a {
+    text-decoration: none;
+    color: black
 }
+
 
 </style>
 
@@ -28,17 +29,17 @@ input {
                 <img class="header-logo" src="{{Vite::asset('resources/img/dc-logo.png')}}" alt="">
             </div>
             <div class="col-8">
-                <ul class="d-flex justify-content-between">
-                    <li>Characters</li>
-                    <li>Comics</li>
-                    <li>Movies</li>
-                    <li>Tv</li>
-                    <li>Games</li>
-                    <li>Collectibles</li>
-                    <li>Videos</li>
-                    <li>Fans</li>
-                    <li>News</li>
-                    <li>Shop</li>
+                <ul class="d-flex gap-1 justify-content-between">
+                    <li><a href="{{route('characters')}}">Characters</a></li>
+                    <li><a href="">Comics</a></li>
+                    <li><a href="">Movies</a></li>
+                    <li><a href="">Tv</a></li>
+                    <li><a href="">Games</a></li>
+                    <li><a href="">Collectibles</a></li>
+                    <li><a href="">Videos</a></li>
+                    <li><a href="">Fans</a></li>
+                    <li><a href="">News</a></li>
+                    <li><a href="">Shop</a></li>
                 </ul>
 
             </div>
@@ -48,9 +49,7 @@ input {
             </div>
         </div>
     </div>
-    <div class="container-fluid px-0">
-        <img class="h-25 w-100 object-fit-cover" src="{{Vite::asset('resources/img/jumbotron.jpg')}}" alt="">
-    </div>
+    
     
  
 
